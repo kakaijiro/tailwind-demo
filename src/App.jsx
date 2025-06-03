@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import LandingPage from "./pages/LandingPage";
-import Sample from "./pages/Sample";
 import PageNotFound from "./pages/PageNotFound";
+import Sample from "./pages/Sample";
+import Clipboard from "./pages/Clipboard";
 
 export default function App() {
   return (
@@ -11,6 +12,8 @@ export default function App() {
         <Routes>
           <Route index element={<LandingPage />} />
           <Route path="sample" element={<Sample />} />
+          <Route path="clipboard" element={<Clipboard />} />
+
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
