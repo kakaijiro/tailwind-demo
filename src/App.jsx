@@ -4,6 +4,7 @@ import LandingPage from "./pages/LandingPage";
 import PageNotFound from "./pages/PageNotFound";
 import Sample from "./pages/Sample";
 import Clipboard from "./pages/Clipboard";
+import LoopStudios from "./pages/LoopStudios";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
           <Route index element={<LandingPage />} />
           <Route path="sample" element={<Sample />} />
           <Route path="clipboard" element={<Clipboard />} />
+          <Route path="loopstudios" element={<LoopStudios />} />
 
           <Route path="*" element={<PageNotFound />} />
         </Routes>

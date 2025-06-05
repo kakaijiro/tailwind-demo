@@ -17,6 +17,8 @@ export default {
       },
       fontFamily: {
         sans: ["Bai Jamjuree", "sans-serif"],
+        josefin: ["Josefin Sans", "sans-serif"],
+        alta: ["Alata"],
       },
     },
   },

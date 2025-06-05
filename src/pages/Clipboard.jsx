@@ -184,10 +184,13 @@ function Clipboard() {
         <section id="references">
           <div className="flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0">
             <img src="/clipboard/logo-google.png" alt="google" />
-            <img src="/clipboard/logo-ibm.png" alt="google" />
-            <img src="/clipboard/logo-microsoft.png" alt="google" />
-            <img src="/clipboard/logo-hp.png" alt="google" />
-            <img src="/clipboard/logo-vector-graphics.png" alt="google" />
+            <img src="/clipboard/logo-ibm.png" alt="ibm" />
+            <img src="/clipboard/logo-microsoft.png" alt="microsoft" />
+            <img src="/clipboard/logo-hp.png" alt="hp" />
+            <img
+              src="/clipboard/logo-vector-graphics.png"
+              alt="vector-graphics"
+            />
           </div>
         </section>
         {/* bottom cta section */}
