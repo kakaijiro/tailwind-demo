@@ -363,7 +363,7 @@ function LoopStudios() {
                   <img
                     src="/loopStudios/icon-facebook.svg"
                     alt=""
-                    className="h-6"
+                    className="h-6 ficon"
                   />
                 </div>
                 {/* icon 2 */}
@@ -371,7 +371,7 @@ function LoopStudios() {
                   <img
                     src="/loopStudios/icon-twitter.svg"
                     alt=""
-                    className="h-6"
+                    className="h-6 ficon"
                   />
                 </div>
                 {/* icon 3 */}
@@ -379,7 +379,7 @@ function LoopStudios() {
                   <img
                     src="/loopStudios/icon-pinterest.svg"
                     alt=""
-                    className="h-6"
+                    className="h-6 ficon"
                   />
                 </div>
                 {/* icon 4 */}
@@ -387,7 +387,7 @@ function LoopStudios() {
                   <img
                     src="/loopStudios/icon-instagram.svg"
                     alt=""
-                    className="h-6"
+                    className="h-6 ficon"
                   />
                 </div>
               </div>
