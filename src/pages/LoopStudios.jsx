@@ -1,8 +1,19 @@
 import { useEffect } from "react";
 
 function LoopStudios() {
+  // hamburger menu
+
+  function openMenu() {
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    btn.classList.toggle("open");
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("flex");
+  }
+
   useEffect(() => {
     document.title = "Loop Studios";
+    openMenu();
 
     const favicon = document.querySelector("link[rel='icon']");
     if (favicon) favicon.href = "/loopStudios/favicon-32x32.png";
@@ -42,9 +53,40 @@ function LoopStudios() {
                 <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
               </div>
             </div>
-            {/* TODO hamburger button */}
+            {/* hamburger button */}
+            <div className="md:hidden">
+              <button
+                id="menu-btn"
+                className="z-40 block hamburger md:hidden focus:outline-none"
+                onClick={openMenu}
+              >
+                <span className="hamburger-top"></span>
+                <span className="hamburger-middle"></span>
+                <span className="hamburger-bottom"></span>
+              </button>
+            </div>
           </nav>
-          {/* TODO mobile menu */}
+          {/* mobile menu */}
+          <div
+            id="menu"
+            className="absolute top-0 bottom-0 left-0 hidden flex-col self-end  w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+          >
+            <a href="#" className="hover:text-pink-500">
+              About
+            </a>
+            <a href="#" className="hover:text-pink-500">
+              Carrers
+            </a>
+            <a href="#" className="hover:text-pink-500">
+              Events
+            </a>
+            <a href="#" className="hover:text-pink-500">
+              Products
+            </a>
+            <a href="#" className="hover:text-pink-500">
+              Support
+            </a>
+          </div>
 
           {/* text box */}
           <div className="max-w-lg mt-32 mb-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl">

@@ -24,3 +24,59 @@ body {
   filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
     brightness(101%) contrast(94%);
 }
+
+/* hambuger menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+  left: 0px;
+}
+
+.hamburger-top {
+  top: 0px;
+}
+
+.hamburger-middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-bottom {
+  bottom: 0px;
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translate(5px, 5px);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.open .hamburger-middle {
+  opacity: 0;
+}
+
+.open .hamburger-bottom {
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
