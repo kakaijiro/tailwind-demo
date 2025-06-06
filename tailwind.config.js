@@ -20,6 +20,9 @@ export default {
         josefin: ["Josefin Sans", "sans-serif"],
         alta: ["Alata"],
       },
+      letterSpacing: {
+        ultra: "0.5em", // not work...
+      },
     },
   },
   plugins: [],
