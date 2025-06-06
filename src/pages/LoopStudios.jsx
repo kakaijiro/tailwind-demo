@@ -1,4 +1,12 @@
+import { useEffect } from "react";
+
 function LoopStudios() {
+  useEffect(() => {
+    document.title = "Loop Studios";
+
+    const favicon = document.querySelector("link[rel='icon']");
+    if (favicon) favicon.href = "/loopStudios/favicon-32x32.png";
+  }, []);
   return (
     <div>
       {/* hero section */}
