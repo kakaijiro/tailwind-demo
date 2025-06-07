@@ -5,6 +5,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Sample from "./pages/Sample";
 import Clipboard from "./pages/Clipboard";
 import LoopStudios from "./pages/LoopStudios";
+import Shortly from "./pages/Shortly";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="sample" element={<Sample />} />
           <Route path="clipboard" element={<Clipboard />} />
           <Route path="loopstudios" element={<LoopStudios />} />
+          <Route path="shortly" element={<Shortly />} />
 
           <Route path="*" element={<PageNotFound />} />
         </Routes>
@@ -26,17 +28,25 @@ export default function App() {
         containerStyle={{ margin: "8px" }}
         toastOptions={{
           success: {
-            duration: 3 * 1000,
+            duration: 5 * 1000,
+            style: {
+              backgroundColor: "#ecfdf5",
+              color: "#065f46",
+              border: "1px solid #34d399",
+            },
           },
           error: {
-            duration: 5 * 1000,
+            duration: 10 * 1000,
+            style: {
+              backgroundColor: "#fef2f2",
+              color: "#991b1b",
+              border: "1px solid #f87171",
+            },
           },
           style: {
             fontSize: "16px",
             maxWidth: "500px",
             padding: "16px 24px",
-            backgroundColor: "var(--color-grey-0)",
-            color: "var(--color-grey-700)",
           },
         }}
       />
