@@ -27,6 +27,7 @@ export default {
         josefin: ["Josefin Sans", "sans-serif"],
         alta: ["Alata"],
         poppins: ["Poppins"],
+        barlow: ["Barlow Semi Condensed"],
       },
       spacing: {
         180: "32rem", // need to check if it work

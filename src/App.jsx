@@ -6,6 +6,7 @@ import Sample from "./pages/Sample";
 import Clipboard from "./pages/Clipboard";
 import LoopStudios from "./pages/LoopStudios";
 import Shortly from "./pages/Shortly";
+import TestimonialGrid from "./pages/TestimonialGrid";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="clipboard" element={<Clipboard />} />
           <Route path="loopstudios" element={<LoopStudios />} />
           <Route path="shortly" element={<Shortly />} />
+          <Route path="testimonial-grid" element={<TestimonialGrid />} />
 
           <Route path="*" element={<PageNotFound />} />
         </Routes>
