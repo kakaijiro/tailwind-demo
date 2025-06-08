@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 .section-container {
   @apply max-w-6xl mx-auto text-center;
@@ -23,6 +24,11 @@ body {
 .ficon:hover {
   filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
     brightness(101%) contrast(94%);
+}
+
+.ficon2:hover {
+  filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg)
+    brightness(105%) contrast(104%);
 }
 
 /* hambuger menu */

@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx,tsx}"],
+  // darkMode: "class", // v4 or later doesn't require this
   theme: {
     screens: {
       sm: "480px",
@@ -21,6 +22,13 @@ export default {
         grayishViolet: "hsl(257,7%,63%)",
         veryDarkBlue: "hsl(255,11%,22%)",
         veryDarkViolet: "hsl(260,8%,14%)",
+        darkBlue: "hsl(217,28%,15%)",
+        darkBlue1: "hsl(218,28%,13%)",
+        darkBlue2: "hsl(216,53%,9%)",
+        darkBlue3: "hsl(219,30%,18%)",
+        accentCyan: "hsl(176,68%,64%)",
+        accentBlue: "hsl(198,60%,50%)",
+        lightRed: "hsl(0,100%,63%)",
       },
       fontFamily: {
         sans: ["Bai Jamjuree", "sans-serif"],
@@ -28,7 +36,15 @@ export default {
         alta: ["Alata"],
         poppins: ["Poppins"],
         barlow: ["Barlow Semi Condensed"],
+        raleway: ["Raleway"],
+        opensans: ["Open Sans"],
       },
+      backgroundImage: (theme) => ({
+        "logo-dark-mode": "url('/fylo/logo-dark-mode.svg')", // not work...
+        "logo-light-mode": "url('/fylo/logo-light-mode.svg')",
+        "curvy-dark-mode": "url('/fylo/bg-curvy-dark-mode.svg')",
+        "curvy-light-mode": "url('/fylo/bg-curvy-light-mode.svg')",
+      }),
       spacing: {
         180: "32rem", // need to check if it work
       },
