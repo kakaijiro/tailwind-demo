@@ -29,6 +29,10 @@ export default {
         accentCyan: "hsl(176,68%,64%)",
         accentBlue: "hsl(198,60%,50%)",
         lightRed: "hsl(0,100%,63%)",
+        softBlue: "hsl(231,69%,60%)",
+        softRed: "hsl(0,94%,66%)",
+        grayishBlue2: "hsl(229,8%,60%)",
+        veryDarkBlue2: "hsl(229,31%,21%)",
       },
       fontFamily: {
         sans: ["Bai Jamjuree", "sans-serif"],
@@ -38,6 +42,7 @@ export default {
         barlow: ["Barlow Semi Condensed"],
         raleway: ["Raleway"],
         opensans: ["Open Sans"],
+        rubik: ["Rubik"],
       },
       backgroundImage: (theme) => ({
         "logo-dark-mode": "url('/fylo/logo-dark-mode.svg')", // not work...
