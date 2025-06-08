@@ -318,7 +318,7 @@ function Fylo() {
                   placeholder="email@example.com"
                 />
               </div>
-              <button className="w-full p-3 px-6 rounded-full bg-[hsl(176,68%,64%)] md:w-56 hover:sacle-95">
+              <button className="w-full p-3 px-6 rounded-full bg-[hsl(176,68%,64%)] md:w-56 hover:scale-95">
                 Get Started For Free
               </button>
             </div>
