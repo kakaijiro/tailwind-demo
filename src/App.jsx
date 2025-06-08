@@ -8,6 +8,7 @@ import LoopStudios from "./pages/LoopStudios";
 import Shortly from "./pages/Shortly";
 import TestimonialGrid from "./pages/TestimonialGrid";
 import Fylo from "./pages/Fylo";
+import Bookmark from "./pages/Bookmark";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="shortly" element={<Shortly />} />
           <Route path="testimonial-grid" element={<TestimonialGrid />} />
           <Route path="fylo" element={<Fylo />} />
+          <Route path="bookmark" element={<Bookmark />} />
 
           <Route path="*" element={<PageNotFound />} />
         </Routes>
