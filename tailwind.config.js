@@ -49,6 +49,7 @@ export default {
         "logo-light-mode": "url('/fylo/logo-light-mode.svg')",
         "curvy-dark-mode": "url('/fylo/bg-curvy-dark-mode.svg')",
         "curvy-light-mode": "url('/fylo/bg-curvy-light-mode.svg')",
+        dots: "url('/bookmark/bg-dots.svg')",
       }),
       spacing: {
         180: "32rem", // need to check if it work
