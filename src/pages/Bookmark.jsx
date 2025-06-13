@@ -2,6 +2,11 @@ import { useEffect, useState } from "react";
 
 function Bookmark() {
   const [tab, setTab] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleMenu() {
+    setIsOpen((prev) => !prev);
+  }
 
   useEffect(() => {
     document.title = "Bookmark Website";
@@ -11,13 +16,21 @@ function Bookmark() {
   }, []);
 
   return (
-    <div className="overflow-x-hidden bg-gray-50">
+    <div className="md:overflow-x-hidden bg-gray-50">
       <nav className="container relative mx-auto p-6">
         {/* flex container for nav items */}
         <div className="flex items-center justify-between space-x-20 my-6">
           {/* logo */}
           <div className="z-30">
-            <img src="/bookmark/logo-bookmark.svg" alt="" id="log" />
+            <img
+              src={`${
+                isOpen
+                  ? "/bookmark/logo-bookmark-footer.svg"
+                  : "/bookmark/logo-bookmark.svg"
+              }`}
+              alt=""
+              id="log"
+            />
           </div>
           {/* menu items */}
           <div className="hidden items-center space-x-10 uppercase text-[hsl(229,8%,60%)] md:flex">
@@ -43,6 +56,60 @@ function Bookmark() {
               href=""
               className="px-8 py-2 text-white bg-[hsl(0,94%,66%)] border-2 border-[hsl(0,94%,66%)] rounded-lg shadow-md hover:text-[hsl(0,94%,66%)] hover:bg-white duration-200"
             >
+              Login
+            </a>
+          </div>
+          {/* hambuger button */}
+          {/* because of the custom class that superseeds defines "display: flex;", "!" is needed */}
+          <button
+            id="menu-btn"
+            className={`z-30 block md:!hidden focus:outline-none hamburger ${
+              isOpen ? "open !fixed top-[50px] right-[50px]" : ""
+            }`}
+            onClick={toggleMenu}
+          >
+            <span
+              className={`hamburger-top ${
+                isOpen ? "!bg-white" : "!bg-gray-700"
+              }`}
+            ></span>
+            <span
+              className={`hamburger-middle ${
+                isOpen ? "!bg-white" : "!bg-gray-700"
+              }`}
+            ></span>
+            <span
+              className={`hamburger-bottom ${
+                isOpen ? "!bg-white" : "!bg-gray-700"
+              }`}
+            ></span>
+          </button>
+        </div>
+        {/* mobile menu */}
+        <div
+          id="menu"
+          className={`fixed inset-0 z-20 flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-[hsl(217,28%,15%)] ${
+            isOpen ? "flex" : "hidden"
+          }`}
+          onClick={toggleMenu}
+        >
+          <div className="w-full py-3 text-center">
+            <a href="#features" className="block hover:text-[hsl(0,94%,66%)]">
+              Features
+            </a>
+          </div>
+          <div className="w-full py-3 text-center">
+            <a href="#download" className="block hover:text-[hsl(0,94%,66%)]">
+              Download
+            </a>
+          </div>
+          <div className="w-full py-3 text-center">
+            <a href="#faq" className="block hover:text-[hsl(0,94%,66%)]">
+              FAQ
+            </a>
+          </div>
+          <div className="w-full py-3 text-center">
+            <a href="#" className="block hover:text-[hsl(0,94%,66%)]">
               Login
             </a>
           </div>

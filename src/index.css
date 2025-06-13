@@ -52,6 +52,7 @@ body {
     brightness(101%) contrast(96%);
 }
 
+/* to define custom classes, we should use @apply */
 /* hambuger menu */
 .hamburger {
   cursor: pointer;
