@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+@config "../tailwind.config.js";
 
 /* @media screen(lg) { doesn't work... inv4.1 */
 @media (min-width: 1020px) {
