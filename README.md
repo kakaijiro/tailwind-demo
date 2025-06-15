@@ -1,12 +1,76 @@
-# React + Vite
+# Tailwind Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of modern, responsive UI demos built with **React**, **Vite**, and **Tailwind CSS**. This project showcases various landing pages, modals, galleries, and more, all styled with Tailwind and React component patterns.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ **Vite** for fast development and build
+- 🎨 **Tailwind CSS** for utility-first styling
+- ⚛️ **React 19** with React Router for SPA navigation
+- ✨ Multiple demo pages:
+  - Landing Page
+  - Bookmark, Clipboard, Fylo, LoopStudios, Shortly, Testimonial Grid, Login Modal, Pricing Cards, Product Modal, Email Subscribe, Image Gallery, and more
+- 📦 Organized assets and screenshots for each demo
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- npm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
+
+Start the local dev server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view the app.
+
+### Build
+
+To build for production:
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+- `src/` – React components, pages, hooks, and styles
+- `public/` – Static assets and images for each demo
+- `index.html` – Main HTML entry
+- `tailwind.config.js` – Tailwind CSS configuration
+- `vite.config.js` – Vite configuration
+
+## Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+- [React Hot Toast](https://react-hot-toast.com/)
+
+## License
+
+MIT

@@ -9,6 +9,11 @@ import Shortly from "./pages/Shortly";
 import TestimonialGrid from "./pages/TestimonialGrid";
 import Fylo from "./pages/Fylo";
 import Bookmark from "./pages/Bookmark";
+import LoginModal from "./pages/LoginModal";
+import PricingCards from "./pages/PricingCards";
+import ProductModal from "./pages/ProductModal";
+import EmailScribe from "./pages/EmailScribe";
+import ImageGallery from "./pages/ImageGallery";
 
 export default function App() {
   return (
@@ -23,6 +28,11 @@ export default function App() {
           <Route path="testimonial-grid" element={<TestimonialGrid />} />
           <Route path="fylo" element={<Fylo />} />
           <Route path="bookmark" element={<Bookmark />} />
+          <Route path="login-modal" element={<LoginModal />} />
+          <Route path="pricing-cards" element={<PricingCards />} />
+          <Route path="product-modal" element={<ProductModal />} />
+          <Route path="email-subscribe" element={<EmailScribe />} />
+          <Route path="image-gallery" element={<ImageGallery />} />
 
           <Route path="*" element={<PageNotFound />} />
         </Routes>
